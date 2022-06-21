@@ -14,5 +14,14 @@ let board = [
 // print board 
 
 function print_board() {
-
+    // loop over board rows
+    for (let row = 0; row < 8; row++) {
+        // loop over board columns
+        for (let col = 0; col < 16; col++) {
+            // convert row and column to board square
+            let square = row * 16 + col;
+            console.log(square)
+                // make sure square is in board
+        }
+    }
 }
