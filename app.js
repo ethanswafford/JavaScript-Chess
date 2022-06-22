@@ -20,8 +20,9 @@ function print_board() {
         for (let col = 0; col < 16; col++) {
             // convert row and column to board square
             let square = row * 16 + col;
-            console.log(square)
-                // make sure square is in board
+            // make sure square is in board
+            if ((square & 0x88) == 0)
+                console.log(square);
         }
     }
 }
